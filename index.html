@@ -26,6 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 14px;
 }
 
 .wiki-main-table {
@@ -315,7 +316,7 @@ details[open] .wiki-h3-icon ion-icon {
     display: inline-block;
     cursor: pointer;
     text-decoration: none !important;
-    top: -0.1em;        /* vertical-align: super 대신 이걸로 높이 조절 */
+    top: -0.1em;
     font-size: 0.9em;
 
 }
@@ -324,16 +325,14 @@ details[open] .wiki-h3-icon ion-icon {
     position: absolute;
     bottom: 100%;
     left: 50%;
-    --fn-shift: 0px; /* JS가 화면 밖으로 넘치는 만큼 이 값을 채워줌 */
+    --fn-shift: 0px;
     transform: translateX(calc(-50% + var(--fn-shift)));
-    /*transform: translateX(-50%);*/
     background-color: #ffffff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 8px 12px;
     width: max-content;
-    max-width: min(250px, calc(100vw - 32px)); /* 화면이 좁아도 박스 자체는 넘치지 않게 */
-    /*max-width: 250px;*/
+    max-width: min(250px, calc(100vw - 32px));
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: left;
@@ -346,8 +345,7 @@ details[open] .wiki-h3-icon ion-icon {
     content: '';
     position: absolute;
     top: 100%;
-    left: calc(50% - var(--fn-shift)); /* 박스가 밀린 만큼 화살표는 반대로 보정해서 계속 링크를 가리킴 */
-    /*left: 50%;*/
+    left: calc(50% - var(--fn-shift));
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
@@ -404,7 +402,7 @@ details[open] .wiki-h3-icon ion-icon {
         <h1 style="font-size: 2.5rem; font-weight: 700; line-height: 1; margin: 0;">Unlucky Antithesis</h1>
       </div>
   <div class="wiki-category" style="display: flex; align-items: center; flex-wrap: wrap;">분류:&nbsp; <span style="color: #0275d8">Degrees of Lewdity/등장인물</span></div>
-  <table class="text1" style="border-collapse: collapse; width: 100%; border: 1px solid #dddddd;" data-ke-align="alignLeft"><tbody><tr><td style="width: 100%; border: 1px solid gray; border-top: 5px solid #ff7777; padding: 12px;"><span style="font-size: 1.3em;">선정성 주의</span><br /><br />해당 페이지에는 폭력, 유혈, 강간을 비롯한 비윤리적이고 노골적인 (성)범죄 내용이 포함되어 있으며 비속어 및 혐오 표현이 쿠션 없이 존재합니다.</td></tr></tbody></table></br>
+  <table class="text1" style="border-collapse: collapse; width: 100%; border: 1px solid #dddddd;" data-ke-align="alignLeft"><tbody><tr><td style="width: 100%; border: 1px solid gray; border-top: 5px solid #ff7777; padding: 12px;"><span style="font-size: 1.3em;">선정성 주의</span><br /><br />해당 페이지에는 폭력, 유혈, 강간을 비롯한 비윤리적이고 노골적인 (성)범죄 내용이 포함되어 있으며 비속어 및 혐오 표현이 쿠션 없이 존재합니다.</td></tr></tbody></table>
   <div class="wiki-container">
     <table class="wiki-main-table">
       <tbody>
@@ -437,7 +435,7 @@ details[open] .wiki-h3-icon ion-icon {
         <td style="width: 100%; margin-left: 5px; padding: 12px 20px 18px 20px; font-size: .95rem; line-height: 1.5; position: relative;">
         <div onclick="(function(header){var body=header.closest('td').querySelector('.wiki-index-body');var btn=header.querySelector('button');var isOpen=body.style.display!=='none';body.style.display=isOpen?'none':'block';if(btn)btn.style.transform=isOpen?'rotate(90deg)':'rotate(0deg)';})(this)" style="display: flex; align-items: center; justify-content: space-between; margin-left: -5px; margin-bottom: 4px; cursor: pointer;" title="접기/펼치기">
         <div><a name="목차"></a><span style="font-size: 1.25em;">목차</span></div>
-        <button style="background:none;border:none;cursor:pointer;padding:2px 4px;color:#555;transition:transform 0.25s ease;display:flex;align-items:center;"><ion-icon name="chevron-down-outline" style="font-size:1.4em;"></ion-icon></button>
+        <button style="background:none;border:none;cursor:pointer;padding:2px 4px;color:#555;transition:transform 0.25s ease;display:flex;align-items:center;"><ion-icon name="chevron-down-outline" style="font-size:1.6em;"></ion-icon></button>
         </div>
         <div class="wiki-index-body">
         <a style="padding-left: 0px;" href="#목차1-">1.</a> The Bully<br />
