@@ -382,6 +382,9 @@ details[open] .wiki-h3-icon ion-icon {
     cursor: pointer;
     font-size: 0.9em;
 }
+html {
+    scroll-behavior: smooth;
+}
 </style>
 </head>
 <body>
@@ -521,9 +524,17 @@ details[open] .wiki-h3-icon ion-icon {
                 modal.innerHTML = tooltipContent;
                 overlay.appendChild(modal);
                 document.body.appendChild(overlay);
+                document.body.style.overflow = 'hidden';
+
+                modal.querySelector('.wiki-modal-close').addEventListener('click', function() {
+                    overlay.remove();
+                    document.body.style.overflow = '';
+                });
+
                 overlay.addEventListener('click', function(e) {
                     if (e.target === overlay) {
                         overlay.remove();
+                        document.body.style.overflow = '';
                     }
                 });
             }
