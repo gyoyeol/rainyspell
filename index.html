@@ -16,10 +16,16 @@
     --wiki-max-width: 600px;
     --wiki-font-size: 15px;
     --wiki-line-height: 1.5;
+    --wiki-font-family: "Pretendard JP Variable", "Pretendard JP", "Pretendard", Pretendard,
+                 -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+                 "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo,
+                 "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka,
+                 "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 #wikiwrap {
-    --wiki-main-color: #a93d53; 
+    --wiki-main-color: #a93d53;
+    font-family: var(--wiki-font-family);
 }
 
 .wiki-container {
@@ -380,10 +386,10 @@ details[open] .wiki-h3-icon ion-icon {
     max-width: 300px;
     z-index: 99999;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    
     font-size: calc(var(--wiki-font-size) * 0.9);
     line-height: var(--wiki-line-height);
     font-weight: normal !important;
+    font-family: var(--wiki-font-family);
 }
 .wiki-modal-close {
     display: block;
