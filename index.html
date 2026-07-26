@@ -521,7 +521,7 @@ html {
                 overlay.className = 'wiki-modal-overlay active';
                 const modal = document.createElement('div');
                 modal.className = 'wiki-modal-box';
-                modal.innerHTML = tooltipContent;
+                modal.innerHTML = tooltipContent + '<div class="wiki-modal-close">닫기</div>';
                 overlay.appendChild(modal);
                 document.body.appendChild(overlay);
                 document.body.style.overflow = 'hidden';
